@@ -1,0 +1,33 @@
+.left-bar-container{
+    color: aliceblue;
+    background-color: black;
+    width: fit-content;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.left-bar-guide-icons{
+    margin-top: 2rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-bar-hover{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.left-icon{
+    margin: 1rem;
+    color: aliceblue;
+    width: fit-content;
+    background-color: transparent;
+}
