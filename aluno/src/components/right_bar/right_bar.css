@@ -1,0 +1,92 @@
+.icon{
+    background-color: black;
+}
+input{
+    border: none;
+}
+
+.right-bar-container-heigth.collapsed{
+    backdrop-filter: blur(0px);
+    position: absolute;
+    height: 100%;
+    width: 5.5rem;
+    z-index: 10;
+    position: fixed;
+    transition: .5s;
+}
+.right-bar-container-heigth{
+    backdrop-filter: blur(5px);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    transition: .5s;
+}
+
+
+.right-bar-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.guide-container {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+}
+
+/*For the margin -value is equal a some of all name-input-container values after*/
+.right-bar-guide-icons {
+    margin-top: -27rem;
+    padding-top: 2rem;
+    padding-right: .5rem;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.search-input-container{
+    margin-left: 5.5rem;
+    margin-right: .5rem;
+    height: 7rem;
+    
+}
+
+.search-input{
+    width: 100%;
+    padding-left: 1rem;
+    font-size: 20px;
+    height: 4rem;
+    margin-top: 2.5rem;
+    border-radius: 1rem;
+
+}
+
+.search-input.collapsed{
+    padding-left: 0;
+    margin-left: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.backpack-input-container{
+    height: 20rem;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.results-list{
+    background-color: black;
+    padding: 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 12px;
+    list-style: none;
+}

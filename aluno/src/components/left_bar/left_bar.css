@@ -1,33 +1,38 @@
-.left-bar-container{
+.left-bar-container {
     color: aliceblue;
     background-color: black;
-    width: fit-content;
+    width: 12rem; /* Largura normal */
     height: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
+    transition: width 0.3s ease;
 }
 
-.left-bar-guide-icons{
+.left-bar-container.collapsed {
+    width: 5rem; /* Largura recolhida */
+}
+
+.left-bar-guide-icons {
     margin-top: 2rem;
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
+    align-items: center; /* Alinha ícones ao centro */
 }
 
-.left-bar-hover{
+.left-bar-hover {
     margin-top: 1rem;
     margin-bottom: 2rem;
     width: 100%;
 }
 
-.left-icon{
-    margin: 1rem;
-    color: aliceblue;
-    width: fit-content;
-    background-color: transparent;
+.guide-container {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
 }
+

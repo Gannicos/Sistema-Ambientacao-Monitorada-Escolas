@@ -1,19 +1,29 @@
+import { useRef, useState } from 'react';
 import './left_bar.css';
-import LeftIcon from './left_icon';
+import Icon from '../Icon/icon';
 
-export default function left_bar(){
+export default function LeftBar() {
+    const [close, setClose] = useState(true);
+    const closing = () => {
+        setClose(!close);
+    };
 
-    return(
-        <div className="left-bar-container">
+    return (
+        <div className={`left-bar-container ${close ? 'collapsed' : ''}`}>
             <div className="left-bar-guide-icons">
-                <p className='guide-container'><LeftIcon value="Home"/></p>
-                <p className='guide-container'><LeftIcon value="Map"/></p>
-                <p className='guide-container'><LeftIcon value="News"/></p>
+                <p className="guide-container">
+                    <button className="icon"><Icon value="Home" /></button>
+                </p>
+                <p className="guide-container">
+                    <button className="icon"><Icon value="Map" /></button>
+                </p>
+                <p className="guide-container">
+                    <button className="icon"><Icon value="News" /></button>
+                </p>
             </div>
-            <div className="left-bar-hover">
-                <LeftIcon value="Close" />
+            <div className="guide-container">
+                <button className="icon" onClick={closing}><Icon value={close ? 'Open' : 'Close'} /></button>
             </div>
         </div>
-            
     );
 }
